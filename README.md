@@ -62,18 +62,18 @@ It also includes practical validation of password protection and password reset 
 | Category 分類                                      | Tools / Concepts 工具 / 概念       |
 | ------------------------------------------------ | ------------------------------ |
 | Cloud Identity Management <br/>雲端身分管理          | Microsoft Entra ID |
-| Group Management <br/>群組管理                      | Microsoft Entra Groups |
-| Collaboration Groups <br/>協作群組                  | Microsoft 365 Groups |
-| Security Groups <br/>安全性群組                      | Microsoft Entra Security Groups |
-| Membership Management <br/>成員管理                 | Assigned membership<br/>指派式成員資格 |
-| Dynamic Membership <br/>動態成員管理                 | Dynamic User membership<br/>動態使用者成員資格 |
-| Dynamic Membership Rules <br/>動態成員規則           | userType Equals Guest |
-| External Identity Management <br/>外部身分管理        | Guest user grouping<br/>Guest 使用者群組管理 |
-| Group Ownership <br/>群組擁有者管理                  | Group Owners |
-| User Membership <br/>使用者群組成員資格              | Add members, Add memberships<br/>新增成員、加入群組 |
-| License Management <br/>授權管理                    | Group-based license assignment<br/>群組式授權指派 |
-| Microsoft 365 Administration <br/>Microsoft 365 管理 | Microsoft 365 Admin Center |
 | Identity Administration <br/>身分管理                | Microsoft Entra Admin Center |
+| Premium Identity Features <br/>進階身分安全功能       | Microsoft Entra ID P2 (Trial) |
+| Password Security <br/>密碼安全                     | Password Protection |
+| Account Lockout <br/>帳號鎖定機制                    | Smart Lockout |
+| Password Restrictions <br/>密碼限制                 | Custom Banned Password List |
+| Password Recovery <br/>密碼復原                     | Self-Service Password Reset (SSPR) |
+| Group-Based Configuration <br/>群組式設定            | Selected Group |
+| Authentication Methods <br/>身分驗證方式              | Email, Mobile Phone, Mobile App Code |
+| User Registration <br/>使用者註冊                    | SSPR Registration |
+| Security Notifications <br/>安全通知                | Password Reset Notifications |
+| Security Validation <br/>安全功能驗證                | Password Protection and SSPR Testing |
+| Auditing and Monitoring <br/>稽核與監控              | Microsoft Entra Audit Logs |
 
 
 <br/>
