@@ -92,10 +92,14 @@ It also includes practical validation of password protection and password reset 
 
 [Tasks]
 
-* Create a Microsoft 365 Group (建立 Microsoft 365 群組)
-* Create a Dynamic Security Group for Guest Users (建立 Guest 使用者動態安全性群組)
-* Add an Existing User to a Group (將既有使用者加入群組)
-* Add Owners and Licenses to a Group (在群組中新增所有者和許可證)
+* Configure Password Protection (設定密碼保護政策)
+* Validate Password Protection (驗證密碼保護政策)
+* Enable SSPR for a Group (為群組啟用 SSPR)
+* Configure SSPR Authentication Methods (設定 SSPR 驗證方式)
+* Configure SSPR Registration and Notifications (設定 SSPR 註冊與通知)
+* Register Password Reset Methods (註冊密碼重設驗證方式)
+* Test Self-Service Password Reset (測試自助式密碼重設)
+* Review Password Reset Audit Logs (檢查密碼重設稽核紀錄)
 <br/>
 
 ---------
@@ -103,49 +107,66 @@ It also includes practical validation of password protection and password reset 
 <h2>Practice｜實踐</h2> <p align="center">
 
 <p align="center">
-<b>Task 1: Create a Microsoft 365 Group<br/> (建立 Microsoft 365 群組)</b><br/>
-<img src="https://i.imgur.com/dhe9tXZ.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Task 1: Configure Password Protection<br/> (設定密碼保護政策)</b><br/>
+<img src="https://i.imgur.com/9fc7EYm.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-* Created a Microsoft 365 group with assigned membership and added an existing user as a group member.<br/>
-建立使用 Assigned 成員資格的 Microsoft 365 群組，並將既有使用者加入群組<br/>
-<br />
-<br />
-<b>Task 2-1: Create a Dynamic Security Group<br/> (建立動態安全性群組)</b><br/>
-<img src="https://i.imgur.com/UXhnRP8.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-* Created a security group with Dynamic User membership and configured a rule to <br/>automatically include users whose userType equals Guest.<br/>
-建立使用 Dynamic User 成員資格的安全性群組，並設定規則自動納入 userType 屬於 Guest 的使用者<br/>
+* Configured Smart Lockout to mitigate password-guessing attacks.<br/>
+配置智慧鎖定功能以減輕密碼猜測攻擊<br/>
+* Enable the custom banned password list (corresponding to a fictional company's name, location, and <br/>flagship product, respectively) to restrict the use of easily guessable, organization-related terms.<br/>
+啟用自訂停用密碼清單（分別對應於虛構的公司名稱、地點和旗艦產品），<br/>以限制使用容易猜測的、與組織相關的術語<br/>
 <br />
 <br />
-<b>Task 2-2: Validate Dynamic Group Membership<br/> (驗證動態群組成員)</b><br/>
-<img src="https://i.imgur.com/T6w1LCV.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Task 2: Validate Password Protection<br/> (驗證密碼保護政策)</b><br/>
+<img src="https://i.imgur.com/v4w10mu.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-* Verified that Guest users were automatically populated into the dynamic security group <br/>based on the configured membership rule.<br/>
-驗證 Guest 使用者已依據設定的動態成員規則自動加入安全性群組<br/>
-<br />
-<br />
-<b>Task 3: Add an Existing User to a Group<br/> (將既有使用者加入群組)</b><br/>
-<img src="https://i.imgur.com/JWzpzk2.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-* Added an existing external user to the Microsoft 365 group through assigned group membership.<br/>
-透過 Assigned 群組成員資格，將既有外部使用者加入 Microsoft 365 群組<br/>
+* Tested the custom banned password policy using a non-administrator account and <br/>verified that a restricted test password was rejected.<br/>
+使用非管理員測試帳號測試自訂禁止密碼政策，並確認受限制的測試密碼遭到拒絕<br/>
 <br />
 <br />
-<b>Task 4-1: Add an Owner to a Group<br/> (新增群組擁有者)</b><br/>
-<img src="https://i.imgur.com/65gtwYN.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Task 3: Enable SSPR for a Group<br/> (為群組啟用 SSPR)</b><br/>
+<img src="https://i.imgur.com/hWFb6Jn.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
-* Added an existing user as an owner of the Microsoft 365 group to demonstrate delegated group administration.<br/>
-將既有使用者新增為 Microsoft 365 群組擁有者，以示範群組管理權限委派<br/>
+* Enabled SSPR for the Project23 group to demonstrate controlled deployment of password recovery capabilities.<br/>
+為 Project23 群組啟用自助式密碼重設 (SSPR)，以示範密碼復原功能的受控部署<br/>
 <br />
 <br />
-<b>Task 4-2: Assign a License to a Group<br/> (為群組指派授權)</b><br/>
-<img src="https://i.imgur.com/wxlnFWW.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<b>Task 4-1: Setting the Number of Authentication Methods<br/> (設定身份驗證方法的數量)</b><br/>
+<img src="https://i.imgur.com/l3vdmmE.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<b>Task 4-2: Configure the Authentication Method Policies<br/> (配置身份驗證方法策略)</b><br/>
+<img src="https://i.imgur.com/hr6XF6W.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<b>Task 5-1: Configure SSPR Registration<br/> (設定 SSPR 註冊)</b><br/>
+<img src="https://i.imgur.com/V5hgOG4.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<b>Task 5-2: Configure SSPR Notifications<br/> (設定 SSPR 通知)</b><br/>
+<img src="https://i.imgur.com/hp4CRBo.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<b>Task 6: Register Password Reset Methods<br/> (註冊密碼重設驗證方式)</b><br/>
+<img src="https://i.imgur.com/hfFivIl.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 * Assigned Microsoft Entra ID P2 to the Project23 Microsoft 365 group through Microsoft Graph and <br/>verified the group-based license assignment in the Microsoft 365 Admin Center.<br/>
 透過 Microsoft Graph 將 Microsoft Entra ID P2 指派給 Project23 Microsoft 365 群組，<br/>並於 Microsoft 365 Admin Center 驗證群組式授權結果<br/>
 <br />
 <br />
-
+<b>Task 7: Test Self-Service Password Reset<br/> (測試自助式密碼重設)</b><br/>
+<img src="https://i.imgur.com/3aZhNjz.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+* Assigned Microsoft Entra ID P2 to the Project23 Microsoft 365 group through Microsoft Graph and <br/>verified the group-based license assignment in the Microsoft 365 Admin Center.<br/>
+透過 Microsoft Graph 將 Microsoft Entra ID P2 指派給 Project23 Microsoft 365 群組，<br/>並於 Microsoft 365 Admin Center 驗證群組式授權結果<br/>
+<br />
+<br />
+<b>Task 8: Review Password Reset Audit Logs<br/> (檢查密碼重設稽核紀錄)</b><br/>
+<img src="https://i.imgur.com/DRi94xz.jpeg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+* Assigned Microsoft Entra ID P2 to the Project23 Microsoft 365 group through Microsoft Graph and <br/>verified the group-based license assignment in the Microsoft 365 Admin Center.<br/>
+透過 Microsoft Graph 將 Microsoft Entra ID P2 指派給 Project23 Microsoft 365 群組，<br/>並於 Microsoft 365 Admin Center 驗證群組式授權結果<br/>
+<br />
+<br />
 
 ---------
 
